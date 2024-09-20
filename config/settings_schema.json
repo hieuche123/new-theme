@@ -36,7 +36,7 @@
         "type": "number",
         "id": "font_size",
         "label": "Font Size (px)",
-        "default": 16
+        "default": 14
       },
       {
         "type": "select",
