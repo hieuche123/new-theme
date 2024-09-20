@@ -17,9 +17,7 @@
 #announcement-bar #close-btn {
     background: none;
     border: none;
-    color: white;
     cursor: pointer;
-    font-size: var(--font-size, 16px);
     position: absolute;
-    right: 10px;
+    right: 16px;
 }
