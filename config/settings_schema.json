@@ -43,18 +43,18 @@
         "id": "font_weight",
         "label": "Font Weight",
         "options": [
-          { "value": "normal", "label": "Normal" },
-          { "value": "bold", "label": "Bold" },
-          { "value": "bolder", "label": "Bolder" },
-          { "value": "lighter", "label": "Lighter" }
+          { "value": "400", "label": "400 (Regular)" },
+          { "value": "500", "label": "500 (Medium)" },
+          { "value": "600", "label": "600 (Semi-Bold)" },
+          { "value": "700", "label": "700 (Bold)" }
         ],
-        "default": "normal"
+        "default": "400"
       },
       {
         "type": "text",
         "id": "font_family",
         "label": "Font Family",
-        "default": "Arial"
+        "default": "'Jost', sans-serif"
       },
       {
         "type": "number",
