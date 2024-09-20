@@ -11,7 +11,7 @@
 #announcement-bar #countdown {
     font-size: var(--font-size, 16px);
     font-weight: var(--font-weight, normal);
-    font-family: var(--font-family, Arial);
+    font-family: var(--font-family, Jost);
 }
 
 #announcement-bar #close-btn {

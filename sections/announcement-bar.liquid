@@ -1,3 +1,5 @@
+<!-- Tích hợp Google Fonts -->
+
 {% assign announcement_text = settings.announcement_text %}
 {% assign countdown_days = settings.countdown_days %}
 {% assign countdown_hours = settings.countdown_hours %}
@@ -14,7 +16,9 @@
   id="announcement-bar"
   style="height: {{ bar_height }}px; --font-size: {{ font_size }}px; --font-weight: {{ font_weight }}; --font-family: {{ font_family }};"
 >
-  <div id="countdown" style="font-size: {{ font_size }}px;">{{ announcement_text }}: <span id="time"></span></div>
+  <div id="countdown" style="font-size: {{ font_size }}px; font-weight: {{ font_weight }};">
+    {{ announcement_text }}: <span id="time"></span>
+  </div>
   <button id="close-btn">&times;</button>
 </div>
 
