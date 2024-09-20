@@ -1,5 +1,34 @@
 [
   {
+    "name": "Announcement Bar",
+    "settings": [
+      {
+        "type": "number",
+        "id": "countdown_days",
+        "label": "Số ngày",
+        "default": 1
+      },
+      {
+        "type": "number",
+        "id": "countdown_hours",
+        "label": "Số giờ",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "countdown_minutes",
+        "label": "Số phút",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "countdown_seconds",
+        "label": "Số giây",
+        "default": 0
+      }
+    ]
+  },
+  {
     "name": "theme_info",
     "theme_name": "Dawn",
     "theme_version": "15.1.0",
