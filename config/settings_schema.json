@@ -25,6 +25,36 @@
         "id": "countdown_seconds",
         "label": "Số giây",
         "default": 0
+      },
+      {
+        "type": "number",
+        "id": "font_size",
+        "label": "Font Size (px)",
+        "default": 16
+      },
+      {
+        "type": "select",
+        "id": "font_weight",
+        "label": "Font Weight",
+        "options": [
+          { "value": "normal", "label": "Normal" },
+          { "value": "bold", "label": "Bold" },
+          { "value": "bolder", "label": "Bolder" },
+          { "value": "lighter", "label": "Lighter" }
+        ],
+        "default": "normal"
+      },
+      {
+        "type": "text",
+        "id": "font_family",
+        "label": "Font Family",
+        "default": "Arial"
+      },
+      {
+        "type": "number",
+        "id": "bar_height",
+        "label": "Chiều cao (px)",
+        "default": 40
       }
     ]
   },

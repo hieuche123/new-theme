@@ -1,0 +1,25 @@
+#announcement-bar {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    color: white;
+    position: relative;
+}
+
+#announcement-bar #countdown {
+    font-size: var(--font-size, 16px);
+    font-weight: var(--font-weight, normal);
+    font-family: var(--font-family, Arial);
+}
+
+#announcement-bar #close-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: var(--font-size, 16px);
+    position: absolute;
+    right: 10px;
+}

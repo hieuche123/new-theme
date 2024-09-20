@@ -2,18 +2,19 @@
 {% assign countdown_hours = settings.countdown_hours %}
 {% assign countdown_minutes = settings.countdown_minutes %}
 {% assign countdown_seconds = settings.countdown_seconds %}
+{% assign font_size = settings.font_size %}
+{% assign font_weight = settings.font_weight %}
+{% assign font_family = settings.font_family %}
+{% assign bar_height = settings.bar_height %}
+
+<link rel="stylesheet" href="{{ 'announcement-bar.css' | asset_url }}">
 
 <div
   id="announcement-bar"
-  style="background-color: red; height: 40px; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; color: white; position: relative;"
+  style="height: {{ bar_height }}px; --font-size: {{ font_size }}px; --font-weight: {{ font_weight }}; --font-family: {{ font_family }};"
 >
-  <div id="countdown" style="font-size: 16px;"></div>
-  <button
-    id="close-btn"
-    style="background: none; border: none; color: white; cursor: pointer; font-size: 20px; position: absolute; right: 10px;"
-  >
-    &times;
-  </button>
+  <div id="countdown"></div>
+  <button id="close-btn">&times;</button>
 </div>
 
 <script>
