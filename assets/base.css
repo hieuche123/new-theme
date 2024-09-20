@@ -103,6 +103,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 @media screen and (min-width: 750px) {
+  #announcement-bar {
+    display: none;
+  }
   .page-width {
     padding: 0 5rem;
   }
@@ -127,6 +130,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 @media screen and (min-width: 990px) {
+  #announcement-bar {
+    display: none;
+  }
   .header:not(.drawer-menu).page-width {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -153,6 +159,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 @media screen and (min-width: 750px) {
+  #announcement-bar {
+    display: none;
+  }
   .section + .section {
     margin-top: var(--spacing-sections-desktop);
   }
@@ -163,6 +172,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 @media screen and (min-width: 750px) {
+  #announcement-bar {
+    display: none;
+  }
   .element-margin {
     margin-top: calc(5rem + var(--page-width-margin));
   }
@@ -280,6 +292,9 @@ h5,
 }
 
 @media only screen and (min-width: 750px) {
+  #announcement-bar {
+    display: none;
+  }
   .hxl {
     font-size: calc(var(--font-heading-scale) * 6.2rem);
   }
