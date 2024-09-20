@@ -1,3 +1,4 @@
+{% assign announcement_text = settings.announcement_text %}
 {% assign countdown_days = settings.countdown_days %}
 {% assign countdown_hours = settings.countdown_hours %}
 {% assign countdown_minutes = settings.countdown_minutes %}
@@ -13,7 +14,7 @@
   id="announcement-bar"
   style="height: {{ bar_height }}px; --font-size: {{ font_size }}px; --font-weight: {{ font_weight }}; --font-family: {{ font_family }};"
 >
-  <div id="countdown"></div>
+  <div id="countdown" style="font-size: {{ font_size }}px;">{{ announcement_text }}: <span id="time"></span></div>
   <button id="close-btn">&times;</button>
 </div>
 
@@ -30,12 +31,12 @@
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("countdown").innerHTML =
-      days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    document.getElementById("time").innerHTML =
+      days + "d : " + hours + "h : " + minutes + "m : " + seconds + "s";
 
     if (distance < 0) {
       clearInterval(countdownFunction);
-      document.getElementById("countdown").innerHTML = "Hết thời gian!";
+      document.getElementById("time").innerHTML = "Hết thời gian!";
     }
   }, 1000);
 

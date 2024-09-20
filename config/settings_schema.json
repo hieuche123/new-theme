@@ -3,6 +3,12 @@
     "name": "Announcement Bar",
     "settings": [
       {
+        "type": "text",
+        "id": "announcement_text",
+        "label": "Announcement Text",
+        "default": "Black Friday 50% Off! Limited time only"
+      },
+      {
         "type": "number",
         "id": "countdown_days",
         "label": "Số ngày",
