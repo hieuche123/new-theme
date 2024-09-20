@@ -1,5 +1,5 @@
 #announcement-bar {
-    background-color: red;
+    background-color: #D0473E;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,8 +9,8 @@
 }
 
 #announcement-bar #countdown {
-    font-size: var(--font-size, 16px);
-    font-weight: var(--font-weight, normal);
+    font-size: var(--font-size, 14px);
+    font-weight: var(--font-weight, 400);
     font-family: var(--font-family, Jost);
 }
 
